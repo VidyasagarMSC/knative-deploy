@@ -2,11 +2,8 @@
 
 Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kubernetes Service(IKS), build and push your image to IBM Cloud Container Registry and deploy the app.
 
-> Rehash of [helloworld-nodejs](https://github.com/knative/docs/tree/master/serving/samples/helloworld-nodejs)
-
 ### Prerequisites
 
-- [git](https://git-scm.com/downloads)
 - [Node and npm](https://www.npmjs.com/get-npm)
 - [Download and install the ibmcloud command line tool](https://console.bluemix.net/docs/cli/index.html#overview)
 
@@ -42,10 +39,12 @@ Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kuber
 
 
 ### Build and Deploy the app
+> Rehash of [helloworld-nodejs](https://github.com/knative/docs/tree/master/serving/samples/helloworld-nodejs)
 
 - Clone the repo
 ```
-  git clone https://github.ibm.com/vidyasagar-msc/knative-deploy.git
+  git clone https://github.com/VidyasagarMSC/knative-deploy.git
+  cd knative-deploy
 ```
 - Install dependencies
 ```
