@@ -7,8 +7,7 @@ Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kuber
 - [Node and npm](https://www.npmjs.com/get-npm)
 - [Download and install the ibmcloud command line tool](https://console.bluemix.net/docs/cli/index.html#overview)
 
-### Setup CLI
-> If you already have ibmcloud installed with the ibmcloud cs plugin, you can skip these steps.
+### Setup IBMCloud CLI
 
 - Install the cs (container-service) and cr (container-registry) plugins
 
