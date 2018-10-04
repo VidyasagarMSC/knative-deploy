@@ -76,3 +76,16 @@ export HOST_URL=$(kubectl get services.serving.knative.dev knative-node-app  --o
  curl -H "Host: ${HOST_URL}" http://${IP_ADDRESS}
 Node App running on IBM Cloud
 ```
+
+### Cleanup
+
+- Run the below command to remove the sample app from your cluster
+
+```
+ kubectl delete --filename service.yaml
+```
+
+- To delete the cluster, enter the following command:
+```
+ ibmcloud cs cluster-rm $CLUSTER_NAME
+```
