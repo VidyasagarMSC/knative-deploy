@@ -1,6 +1,6 @@
 # Knative-deploy
 
-Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kubernetes Service(IKS), push your image to IBMCloud Container Registry and deploy the app.
+Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kubernetes Service(IKS), build and push your image to IBM Cloud Container Registry and deploy the app.
 
 > Rehash of [helloworld-nodejs](https://github.com/knative/docs/tree/master/serving/samples/helloworld-nodejs)
 
@@ -60,7 +60,7 @@ Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kuber
 ```
   kubectl apply --filename service.yaml
 ```
-- To find the IP address for your service, use kubectl get svc knative-ingressgateway -n istio-system` to get the ingress IP for your cluster. If your cluster is new, it may take sometime for the service to get asssigned an external IP address.
+- To find the IP address for your service, use `kubectl get svc knative-ingressgateway -n istio-system` to get the ingress IP for your cluster. If your cluster is new, it may take sometime for the service to get asssigned an external IP address.
 
 ```
 export IP_ADDRESS=$(kubectl get svc knative-ingressgateway --namespace istio-system --output 'jsonpath={.status.loadBalancer.ingress[0].ip}')
