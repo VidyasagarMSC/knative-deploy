@@ -34,7 +34,7 @@ $ export IP_ADDRESS=$(kubectl get svc knative-ingressgateway --namespace istio-s
 ```
 To find the URL for your service, use `kubectl get services.serving.knative.dev knative-node-app --output jsonpath='{.status.domain}'`
 ```
-$ export HOST_URL=$(kubectl get services.serving.knative.dev knative-node-app  --output jsonpath='{.status.domain}')
+$ export HOST_URL=$(kubectl get services.serving.knative.dev knative-node-kaniko  --output jsonpath='{.status.domain}')
 ```
 Now you can make a request to your app to see the result.
 ```
