@@ -38,7 +38,7 @@ Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kuber
 
 
 ### Build your source into a container image and push using Kaniko
-To Build a source into a container image from a Dockerfile inside a kubernetes cluster and push the image to IBM Cloud Container registry; all of this using Google's Kaniko tool, refer this link
+To Build a source into a container image from a Dockerfile inside a kubernetes cluster and push the image to IBM Cloud Container registry; all of this using Google's Kaniko tool, refer [this link](https://github.com/VidyasagarMSC/knative-deploy/blob/master/kaniko/README.md)
 
 OR
 

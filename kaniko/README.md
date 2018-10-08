@@ -17,7 +17,7 @@ Execute the shell script by running the below command
 $ ./deploy.sh
 ```
 The build should have been kicked off. Let's take a look.
-Running `kubectl get pods` , you should see a pod named `kaniko-build` with a postfix.
+Running `kubectl get pods` , you should see a pod named `kaniko-build` with a postfix(say XXXXX).
 
 For logs,
 ```
@@ -41,4 +41,20 @@ Now you can make a request to your app to see the result.
 $ curl -H "Host: ${HOST_URL}" http://${IP_ADDRESS}
 
 Response: Kaniko Node App running on IBM Cloud
+```
+### Clean Up
+Run the below command to remove the sample app from your cluster
+```
+$ kubectl delete --filename service.yaml
+```
+To delete other secret,ServiceAccount and Build 
+```
+$ kubectl delete --filename build.yaml
+$ kubectl delete --filename serviceaccount.yaml
+$ kubectl delete --filename secret.yaml
+$ kubectl delete --filename kaniko.yaml
+```
+To delete the cluster (removes everything), enter the following command:
+```
+$ ibmcloud cs cluster-rm $CLUSTER_NAME
 ```
