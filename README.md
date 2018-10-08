@@ -37,7 +37,14 @@ Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kuber
 - [Installing Knative components](https://github.com/knative/docs/blob/master/install/Knative-with-IKS.md#installing-knative-components)
 
 
-### Build and Deploy the app
+### Build your source into a container image and push using Kaniko
+To Build a source into a container image from a Dockerfile inside a kubernetes cluster and push the image to IBM Cloud Container registry; all of this using Google's Kaniko tool, refer this link
+
+OR
+
+to build a container Image using Docker Daemon, follow the steps below
+
+### Build the app as a container image using Docker Daemon
 > Rehash of [helloworld-nodejs](https://github.com/knative/docs/tree/master/serving/samples/helloworld-nodejs)
 
 - Clone the repo
@@ -58,6 +65,9 @@ Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kuber
 ```
   kubectl apply --filename service.yaml
 ```
+
+### Test your app
+
 - To find the IP address for your service, use `kubectl get svc knative-ingressgateway -n istio-system` to get the ingress IP for your cluster. If your cluster is new, it may take sometime for the service to get asssigned an external IP address.
 
 ```
