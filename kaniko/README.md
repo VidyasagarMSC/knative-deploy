@@ -47,12 +47,9 @@ Run the below command to remove the sample app from your cluster
 ```
 $ kubectl delete --filename service.yaml
 ```
-To delete other secret,ServiceAccount and Build 
+To delete other Kaniko BuildTemplate,Secret,ServiceAccount and Build,execute the below script
 ```
-$ kubectl delete --filename build.yaml
-$ kubectl delete --filename serviceaccount.yaml
-$ kubectl delete --filename secret.yaml
-$ kubectl delete --filename kaniko.yaml
+$ ./delete.sh
 ```
 To delete the cluster (removes everything), enter the following command:
 ```
