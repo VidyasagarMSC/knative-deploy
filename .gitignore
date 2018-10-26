@@ -71,3 +71,6 @@ typings/
 
 # Serverless directories
 .serverless
+kaniko/results.bin
+kaniko/metrics.json
+kaniko/plot.html
