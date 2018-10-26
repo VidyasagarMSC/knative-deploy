@@ -26,7 +26,7 @@ Step-by-step instructions to install Knative with Istio 1.0.2 on IBM Cloud Kuber
 - Knative depends on Istio.
 
 ```
-  kubectl apply --filename kubectl apply --filename https://raw.githubusercontent.com/knative/serving/master/third_party/istio-1.0.2/istio.yaml
+  kubectl apply --filename https://raw.githubusercontent.com/knative/serving/master/third_party/istio-1.0.2/istio.yaml
 ```
 
 - Label the default namespace with istio-injection=enabled:
